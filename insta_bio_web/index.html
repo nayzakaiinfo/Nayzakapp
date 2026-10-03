@@ -639,61 +639,174 @@
         icon: "🍎",
         correct: ["لك سقطت التفاحة ولقطت الجواب بالملّي! كل فعل له رد فعل عبقري!", "تفاحة دهب لإلك اليوم.. تسلم هالأفكار الموزونة!"],
         wrong: ["وقعت التفاحة على راسي وما وجعتني قد ما وجعني جوابك هاد!", "شكلو التفاحة وقعت ع رأسك إنت بدل ما توقع ع راسي!"]
+      },
+      shakespeare: {
+        name: "شكسبير",
+        icon: "🎭",
+        correct: ["نكون أو لا نكون.. وأنت أثبتت وجودك على خشبة مسرح العباقرة!", "يا سلام ع البلاغة والفهم! روميو وجولييت بيزقفولك!"],
+        wrong: ["مأساة تراجيدية أكبر من هاملت وعطيل سوا! شو هالاختيار؟!", "تلك هي المسألة.. وأنت ضيعت المسألة والجواب معها!"]
+      },
+      almutanabbi: {
+        name: "المتنبي",
+        icon: "🐎",
+        correct: ["الخيل والليل والبيداء تعرفك.. وتعرف إنك حكيم وفهيم!", "أنا الذي نظر الأعمى إلى ذكائه.. وأسمعت إجاباته من به صممُ!"],
+        wrong: ["أغاية الدين أن تحفوا شواربكم وتغلطوا هيك غلطة شنيعة؟! ما هكذا تورد الإبل!", "كأنك ما قرأت بيت شعر بحياتك.. سيف الدولة بريء من جوابك!"]
+      },
+      davinci: {
+        name: "دا فينشي",
+        icon: "🎨",
+        correct: ["رسمت الجواب بدقة متل ابتسامة الموناليزا.. إتقان مطلق!", "عبقرية تتجاوز عصر النهضة.. يا فنان!"],
+        wrong: ["عفست اللوحة وخلطت الألوان غلط.. شخبطة لا تمت للفن بصلة!", "الموناليزا نفسها كانت رح تبكي من هاد الجواب!"]
+      },
+      saladinal: {
+        name: "صلاح الدين",
+        icon: "🏰",
+        correct: ["فروسية وشهامة وذكاء قائد نبيل.. حطين جديدة في سجل انتصاراتك!", "إرادة فولاذية لا تنكسر.. هكذا تكون القيادة!"],
+        wrong: ["خطة تكتيكية فاشلة.. حاصرت حالك بقلعة الغلط!", "الدم لا ينام وجوابك نام بالعسل.. استيقظ يا فارس!"]
+      },
+      ibnsina: {
+        name: "ابن سينا",
+        icon: "🌿",
+        correct: ["تشخيصك للمقولة مية بالمية.. شفاء للعقل ونور للحكمة!", "القانون في الطب والقانون في الذكاء.. برافو يا حكيم!"],
+        wrong: ["الوهم نصف الداء.. وجوابك هاد علّة بدها وصفة علاج مستعجلة!", "طبياً وعقلياً.. هاد الجواب خالي من أي مادة فعالة!"]
+      },
+      aristotle: {
+        name: "أرسطو",
+        icon: "🦉",
+        correct: ["المعلم الأول فخور فيك وبقياسك المنطقي السليم!", "الفضيلة وسط بين رذيلتين.. وجوابك كان عين العقل!"],
+        wrong: ["ضربت المنطق الأرسطي بعرض الحائط! راجع المقدمات والنتائج!", "الإسكندر الأكبر تلميذي ما كان يغلط هيك غلطة!"]
       }
     };
 
     const QUOTES_POOL = [
-      { quote: "الحياة التي لا تُختبر لا تستحق أن تُعاش.", author: "socrates", cat: "فلسفة وحكمة", fact: "قال سقراط هذه الجملة في دفاعه الشهير أمام محكمة أثينا." },
-      { quote: "كل ما أعرفه هو أنني لا أعرف شيئاً.", author: "socrates", cat: "فلسفة ومعرفة", fact: "اعتبر حكيم اليونان لأنه الوحيد الذي يعترف بجهله." },
-      { quote: "أنا أفكّر، إذن أنا موجود.", author: "descartes", cat: "فلسفة الوجود", fact: "ابتكر الكوجيتو لإثبات وجود الذات بعد الشك المطلق." },
-      { quote: "الشك هو بداية الحكمة.", author: "descartes", cat: "منطق وعقل", fact: "اخترع ديكارت نظام الإحداثيات الديكارتية المستخدم بالرياضيات." },
-      { quote: "كلمة مستحيل ليست في قاموسي، بل في معجم الحمقى.", author: "napoleon", cat: "عزيمة وإرادة", fact: "قاد فرنسا في معارك تاريخية خلدت اسمه كأحد أعظم القادة." },
-      { quote: "القائد هو تاجر الأمل.", author: "napoleon", cat: "قيادة وإلهام", fact: "وضع قانون نابليون المدني الذي بُنيت عليه قوانين العالم الحديث." },
-      { quote: "المشاعر المكبوتة لا تموت، بل تظهر لاحقاً بطرق أكثر قبحاً.", author: "freud", cat: "علم النفس", fact: "مؤسس مدرسة التحليل النفسي ومكتشف أسرار اللاوعي." },
-      { quote: "الأحلام هي الطريق الملكي إلى معرفة العقل الباطن.", author: "freud", cat: "عالم الأحلام", fact: "اعتبر كتابه 'تفسير الأحلام' أعظم إنجازاته الفكرية." },
-      { quote: "الخيال أكثر أهمية من المعرفة، فالمعرفة محدودة بينما الخيال يطوف العالم.", author: "einstein", cat: "إبداع وفيزياء", fact: "تخيل ركوب شعاع الضوء وهو مراهق فابتكر النظرية النسبية." },
-      { quote: "الجنون هو أن تفعل الشيء نفسه مراراً وتتوقع نتائج مختلفة.", author: "einstein", cat: "منطق وتغيير", fact: "حاز على جائزة نوبل لتفسيره التأثير الكهروضوئي." },
-      { quote: "لكل فعل رد فعل مساوٍ له في المقدار ومضاد له في الاتجاه.", author: "newton", cat: "فيزياء وحركة", fact: "القانون الثالث لنيوتن هو أساس انطلاق الصواريخ للفضاء." },
-      { quote: "ما نعرفه قطرة، وما نجهله محيط كامل.", author: "newton", cat: "تواضع علمي", fact: "ألهمته تفاحة سقطت في حديقته فكرة الجاذبية الأرضية." }
+      { id: 1, quote: "الحياة التي لا تُختبر لا تستحق أن تُعاش.", author: "socrates", cat: "فلسفة وحكمة", fact: "قال سقراط هذه الجملة في دفاعه الشهير أمام محكمة أثينا." },
+      { id: 2, quote: "كل ما أعرفه هو أنني لا أعرف شيئاً.", author: "socrates", cat: "فلسفة وحكمة", fact: "اعتبر حكيم اليونان لأنه الوحيد الذي يعترف بجهله الصادق." },
+      { id: 3, quote: "التربية هي إيقاد شعلة وليست ملء وعاء.", author: "socrates", cat: "فلسفة وحكمة", fact: "شبّه سقراط منهجه الفلسفي بمهنة والدته القابلة في توليد الأفكار." },
+      { id: 4, quote: "تكلم حتى أراك.", author: "socrates", cat: "فلسفة وحكمة", fact: "قالها لشاب جميل المنظر ليعرف جوهر عقله وفكره الحقيقي." },
+      { id: 5, quote: "أنا أفكّر، إذن أنا موجود.", author: "descartes", cat: "فلسفة وحكمة", fact: "ابتكر الكوجيتو الشهير لإثبات وجود الذات بعد الشك المنهجي." },
+      { id: 6, quote: "الشك هو بداية الحكمة.", author: "descartes", cat: "فلسفة وحكمة", fact: "اخترع ديكارت نظام الإحداثيات الديكارتية (X و Y) المستخدم بالهندسة." },
+      { id: 7, quote: "ليس كافياً أن تمتلك عقلاً جيداً، المهم هو أن تستخدمه جيداً.", author: "descartes", cat: "علم النفس والتفكير", fact: "صاحب كتاب 'مقال عن المنهج' أحد ركائز الفلسفة الحديثة." },
+      { id: 8, quote: "كلمة مستحيل ليست في قاموسي، بل في معجم الحمقى.", author: "napoleon", cat: "تاريخ وقيادة", fact: "قاد فرنسا في معارك تاريخية خلدت اسمه كأحد أعظم القادة العسكريين." },
+      { id: 9, quote: "القائد هو تاجر الأمل.", author: "napoleon", cat: "تاريخ وقيادة", fact: "وضع قانون نابليون المدني الذي بُنيت عليه قوانين معظم دول العالم." },
+      { id: 10, quote: "من يخشى الفشل يُهزم مسبقاً.", author: "napoleon", cat: "تاريخ وقيادة", fact: "خاض أكثر من 70 معركة حربية طوال مسيرته الاستراتيجية." },
+      { id: 11, quote: "المشاعر المكبوتة لا تموت، بل تُدفن حية وتظهر لاحقاً بطرق أكثر قبحاً.", author: "freud", cat: "علم النفس والتفكير", fact: "مؤسس مدرسة التحليل النفسي ومكتشف أسرار العقل الباطن." },
+      { id: 12, quote: "الأحلام هي الطريق الملكي إلى معرفة العقل الباطن.", author: "freud", cat: "علم النفس والتفكير", fact: "اعتبر كتابه 'تفسير الأحلام' أعظم إنجاز فكري له." },
+      { id: 13, quote: "في أوقات الضعف تنكشف أعماق النفس البشرية الحقيقية.", author: "freud", cat: "علم النفس والتفكير", fact: "ابتكر مفهوم 'الأنا' و'الهو' و'الأنا العليا' في بنية النفس." },
+      { id: 14, quote: "الخيال أكثر أهمية من المعرفة، فالمعرفة محدودة بينما الخيال يطوف العالم.", author: "einstein", cat: "علوم واكتشاف", fact: "تخيل ركوب شعاع الضوء وهو مراهق فتوصل للنظرية النسبية." },
+      { id: 15, quote: "الجنون هو أن تفعل الشيء نفسه مراراً وتتوقع نتائج مختلفة.", author: "einstein", cat: "علم النفس والتفكير", fact: "حاز على جائزة نوبل لتفسيره التأثير الكهروضوئي في الفيزياء." },
+      { id: 16, quote: "أهم شيء هو ألا تتوقف عن التساؤل؛ للفضول سبب خاص لوجوده.", author: "einstein", cat: "علوم واكتشاف", fact: "كان يعزف على الكمان لمساعدته في حل المعضلات الفيزيائية المعقدة." },
+      { id: 17, quote: "لكل فعل رد فعل مساوٍ له في المقدار ومضاد له في الاتجاه.", author: "newton", cat: "علوم واكتشاف", fact: "القانون الثالث لنيوتن هو الأساس الفيزيائي لانطلاق الصواريخ." },
+      { id: 18, quote: "ما نعرفه قطرة، وما نجهله محيط كامل.", author: "newton", cat: "علوم واكتشاف", fact: "ألهمته تفاحة سقطت أمامه في الحديقة صياغة قانون الجاذبية الكونية." },
+      { id: 19, quote: "إذا كنت قد رأيت أبعد من غيري، فذلك لأنني وقفت على أكتاف العمالقة.", author: "newton", cat: "علوم واكتشاف", fact: "اخترع التلسكوب العاكس وشارك في تأسيس حساب التفاضل والتكامل." },
+      { id: 20, quote: "نكون أو لا نكون، تلك هي المسألة.", author: "shakespeare", cat: "أدب وفنون", fact: "أشهر مناجاة مسرحية في تاريخ الأدب العالمي من مسرحية هاملت." },
+      { id: 21, quote: "العالم كله مسرح، وجميع الرجال والنساء مجرد ممثلين.", author: "shakespeare", cat: "أدب وفنون", fact: "أغنى اللغة الإنجليزية بأكثر من 1700 كلمة وتعبير جديد." },
+      { id: 22, quote: "ليس كل ما يلمع ذهباً.", author: "shakespeare", cat: "أدب وفنون", fact: "وردت هذه الحكمة الخالدة في مسرحيته الشهيرة 'تاجر البندقية'." },
+      { id: 23, quote: "الخيل والليل والبيداء تعرفني، والسيف والرمح والقرطاس والقلم.", author: "almutanabbi", cat: "أدب وفنون", fact: "البيت الشعري الأسطوري لأعظم شعراء العربية وأكثرهم عزة وفخراً." },
+      { id: 24, quote: "على قدر أهل العزم تأتي العزائم، وتأتي على قدر الكرام المكارم.", author: "almutanabbi", cat: "أدب وفنون", fact: "كتبها المتنبي مدحاً لانتصارات سيف الدولة الحمداني في الثغور." },
+      { id: 25, quote: "إذا رأيت نيوب الليث بارزة، فلا تظنن أن الليث يبتسم.", author: "almutanabbi", cat: "أدب وفنون", fact: "من أروع أبيات الحكمة والتحذير من الغدر في الشعر العربي." },
+      { id: 26, quote: "البساطة هي قمة التطور والتعقيد.", author: "davinci", cat: "أدب وفنون", fact: "عبقري النهضة الذي جمع بين الرسم والهندسة والتشريح والطيران." },
+      { id: 27, quote: "التعلم هو الشيء الوحيد الذي لا يُتعب العقل أبداً ولا يجعله يندم.", author: "davinci", cat: "علم النفس والتفكير", fact: "كان يكتب مذكراته العلمية بالعكس بخط المرآة من اليمين لليسار." },
+      { id: 28, quote: "إياك وسفك الدماء، فإن الدم لا ينام.", author: "saladinal", cat: "تاريخ وقيادة", fact: "وصية الناصر صلاح الدين الأيوبي الشهيرة لابنه الملك الظاهر غازي." },
+      { id: 29, quote: "النصر ليس بالقوة وحدها، بل بالعدل والإحسان إلى الناس.", author: "saladinal", cat: "تاريخ وقيادة", fact: "اشتُهر في كل كتب التاريخ الشرقية والغربية بفروسيته ونبله الإنساني." },
+      { id: 30, quote: "الوهم نصف الداء، والاطمئنان نصف الدواء، والصبر بداية الشفاء.", author: "ibnsina", cat: "علوم واكتشاف", fact: "كتابه 'القانون في الطب' ظل المرجع الطبي الأول في جامعات أوروبا لـ 500 عام." },
+      { id: 31, quote: "العقل البشري قوة قادرة على فهم قوانين الوجود إن تحرر من الخرافة.", author: "ibnsina", cat: "علوم واكتشاف", fact: "أول من وصف مرض السكري والتهاب السحايا بدقة علمية مذهلة." },
+      { id: 32, quote: "علامة العقل المتعلم هي قدرته على تداول الفكرة دون قبولها.", author: "aristotle", cat: "فلسفة وحكمة", fact: "مؤسس علم المنطق الصوري وأستاذ الإسكندر الأكبر المقدوني." },
+      { id: 33, quote: "نحن ما نفعله باستمرار؛ التميز إذن ليس فعلاً بل عادة.", author: "aristotle", cat: "علم النفس والتفكير", fact: "لقبه فلاسفة الشرق والغرب بـ 'المعلم الأول'." },
+      { id: 34, quote: "الفضيلة وسط بين رذيلتين، إحداهما إفراط والأخرى تفريط.", author: "aristotle", cat: "فلسفة وحكمة", fact: "صاحب نظرية 'الوسط الذهبي' الأخلاقية الخالدة." },
+      { id: 35, quote: "الوقت أثمن عملة في حياتك؛ لا تجعل الآخرين ينفقونها بدلاً منك.", author: "socrates", cat: "فلسفة وحكمة", fact: "رفض سقراط الهروب من السجن وفضّل شرب السم احتراماً للقانون." },
+      { id: 36, quote: "الجيش يسير على معدته.", author: "napoleon", cat: "تاريخ وقيادة", fact: "أول قائد ينظم سلاح الإمداد والتموين العسكري الحديث في التاريخ." },
+      { id: 37, quote: "العقل مثل المظلة؛ لا يعمل إلا إذا كان مفتوحاً.", author: "einstein", cat: "علم النفس والتفكير", fact: "رفض عرضاً ليصبح رئيساً لدولة إسرائيل وفضّل التفرغ للفيزياء." },
+      { id: 38, quote: "إذا كنت تريد أن تشعل البرق، عليك أولاً أن تكون سحابة لفترة طويلة.", author: "newton", cat: "علوم واكتشاف", fact: "صاغ قوانين الحركة والجاذبية في عزلته الريفية هرباً من طاعون لندن." },
+      { id: 39, quote: "ذو العقل يشقى في النعيم بعقله، وأخو الجهالة في الشقاوة ينعمُ.", author: "almutanabbi", cat: "أدب وفنون", fact: "أشهر مقولة عربية في تصوير معاناة أصحاب العقول الراجحة." },
+      { id: 40, quote: "من لم ينفعه العلم لم يأمن ضرر الجهل.", author: "ibnsina", cat: "علوم واكتشاف", fact: "ألف كتاب 'الشفاء' في الفلسفة والمنطق والعلوم وهو في قمة عطائه." }
     ];
 
+    let selectedCategory = 'الكل';
     let currentQuestions = [];
     let qIndex = 0;
     let score = 0;
     let streak = 0;
     let correctCount = 0;
+    let totalSpeedBonus = 0;
+    let totalStreakBonus = 0;
     let timer = 15;
     let timerInterval = null;
+    let isAnswering = false;
+
+    // Load and update seen question progress in localStorage
+    function updateProgressStats() {
+      try {
+        const seen = JSON.parse(localStorage.getItem('nayzak_seen_quotes') || '[]');
+        const pct = Math.round((seen.length / QUOTES_POOL.length) * 100);
+        const counterEl = document.getElementById('web-seen-counter');
+        const fillEl = document.getElementById('web-progress-fill');
+        if (counterEl) counterEl.innerText = `${seen.length} / ${QUOTES_POOL.length} مستكشفة (${pct}%)`;
+        if (fillEl) fillEl.style.width = pct + '%';
+      } catch (e) {}
+    }
+
+    function recordSeenQuote(quoteId) {
+      try {
+        const seen = JSON.parse(localStorage.getItem('nayzak_seen_quotes') || '[]');
+        if (!seen.includes(quoteId)) {
+          seen.push(quoteId);
+          localStorage.setItem('nayzak_seen_quotes', JSON.stringify(seen));
+          updateProgressStats();
+        }
+      } catch (e) {}
+    }
+
+    function setCategory(catName, btnElement) {
+      selectedCategory = catName;
+      document.querySelectorAll('#cat-chips .pill').forEach(b => b.classList.remove('active-cat'));
+      if (btnElement) btnElement.classList.add('active-cat');
+      playBeep('click');
+    }
 
     function showScreen(name) {
       document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
       document.getElementById('screen-' + name).classList.add('active');
+      if (name === 'home') updateProgressStats();
     }
 
     function startGame() {
-      logGa4Event('game_start', { category: 'منوع' });
-      currentQuestions = [...QUOTES_POOL].sort(() => 0.5 - Math.random()).slice(0, 10);
+      playBeep('click');
+      logGa4Event('game_start', { category: selectedCategory });
+
+      let pool = QUOTES_POOL;
+      if (selectedCategory !== 'الكل') {
+        pool = QUOTES_POOL.filter(q => q.cat === selectedCategory);
+        if (pool.length < 5) pool = QUOTES_POOL; // Fallback if category has few questions
+      }
+
+      currentQuestions = [...pool].sort(() => 0.5 - Math.random()).slice(0, 10);
       qIndex = 0;
       score = 0;
       streak = 0;
       correctCount = 0;
+      totalSpeedBonus = 0;
+      totalStreakBonus = 0;
+      isAnswering = false;
       showScreen('quiz');
       loadQuestion();
     }
 
     function loadQuestion() {
       clearInterval(timerInterval);
+      isAnswering = false;
       timer = 15;
       updateTimerUI();
 
       const q = currentQuestions[qIndex];
-      document.getElementById('question-counter').innerText = `السؤال ${qIndex + 1} من 10`;
+      recordSeenQuote(q.id);
+
+      document.getElementById('question-counter').innerText = `السؤال ${qIndex + 1} من ${currentQuestions.length}`;
       document.getElementById('score-counter').innerText = `${score} نقطة 🏆`;
       document.getElementById('streak-text').innerText = streak > 1 ? `🔥 x${streak}` : '';
       document.getElementById('quote-category').innerText = q.cat;
       document.getElementById('quote-content').innerText = `« ${q.quote} »`;
 
-      // Build 4 options (correct + 3 random)
+      // Build 4 options (correct author + 3 distinct random figures)
       const allKeys = Object.keys(FIGURES);
       const otherKeys = allKeys.filter(k => k !== q.author).sort(() => 0.5 - Math.random()).slice(0, 3);
       const options = [q.author, ...otherKeys].sort(() => 0.5 - Math.random());
@@ -701,9 +814,10 @@
       const container = document.getElementById('options-container');
       container.innerHTML = '';
       options.forEach(optKey => {
-        const fig = FIGURES[optKey];
+        const fig = FIGURES[optKey] || { name: optKey, icon: "👤" };
         const card = document.createElement('div');
         card.className = 'option-card';
+        card.dataset.key = optKey;
         card.innerHTML = `
           <div style="font-size:28px;">${fig.icon}</div>
           <div style="flex:1;">
@@ -727,7 +841,7 @@
     function updateTimerUI() {
       const fill = document.getElementById('timer-fill');
       const text = document.getElementById('timer-text');
-      const pct = (timer / 15) * 100;
+      const pct = Math.max(0, (timer / 15) * 100);
       fill.style.width = pct + '%';
       text.innerText = `الوقت: ${timer} ث`;
       if (timer <= 5) {
@@ -737,26 +851,42 @@
       }
     }
 
-    // Lightweight Web Audio API synthesizer for native sound effects
+    // High performance Web Audio API synthesizer for instant native effects
     let audioCtx = null;
     function playBeep(type) {
       try {
         if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (audioCtx.state === 'suspended') audioCtx.resume();
-        const osc = audioCtx.createOscillator();
-        const gain = audioCtx.createGain();
-        osc.connect(gain);
-        gain.connect(audioCtx.destination);
         const now = audioCtx.currentTime;
-        if (type === 'correct') {
+
+        if (type === 'click') {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(600, now);
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        } else if (type === 'correct') {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
           osc.type = 'triangle';
-          osc.frequency.setValueAtTime(523.25, now);
-          osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.12);
+          osc.frequency.setValueAtTime(523.25, now); // C5
+          osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.12); // G5
           gain.gain.setValueAtTime(0.2, now);
           gain.gain.exponentialRampToValueAtTime(0.01, now + 0.22);
           osc.start(now);
           osc.stop(now + 0.22);
         } else if (type === 'wrong') {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
           osc.type = 'sawtooth';
           osc.frequency.setValueAtTime(220, now);
           osc.frequency.exponentialRampToValueAtTime(140, now + 0.2);
@@ -764,48 +894,80 @@
           gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
           osc.start(now);
           osc.stop(now + 0.25);
+        } else if (type === 'fanfare') {
+          [523.25, 659.25, 783.99, 1046.50].forEach((freq, i) => {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(freq, now + (i * 0.1));
+            gain.gain.setValueAtTime(0.18, now + (i * 0.1));
+            gain.gain.exponentialRampToValueAtTime(0.01, now + (i * 0.1) + 0.3);
+            osc.start(now + (i * 0.1));
+            osc.stop(now + (i * 0.1) + 0.3);
+          });
         }
       } catch (e) {}
     }
 
     function selectAnswer(selectedKey, cardElement) {
+      if (isAnswering) return; // Prevent double taps
+      isAnswering = true;
       clearInterval(timerInterval);
+
       const q = currentQuestions[qIndex];
       const isCorrect = selectedKey === q.author;
       const isTimeout = selectedKey === null;
+
+      // Haptic feedback for mobile
+      if (navigator.vibrate) {
+        navigator.vibrate(isCorrect ? [40] : [80, 40, 80]);
+      }
 
       if (isCorrect) {
         playBeep('correct');
         streak++;
         correctCount++;
-        score += 100 + (timer * 10) + (streak * 20);
+        const speedBonus = timer * 10;
+        const streakBonus = streak * 20;
+        totalSpeedBonus += speedBonus;
+        totalStreakBonus += streakBonus;
+        score += 100 + speedBonus + streakBonus;
         if (cardElement) cardElement.classList.add('correct');
       } else {
         playBeep('wrong');
         streak = 0;
         if (cardElement) cardElement.classList.add('wrong');
+        // Visually highlight the correct option for educational clarity
+        const correctCard = document.querySelector(`.option-card[data-key="${q.author}"]`);
+        if (correctCard) correctCard.classList.add('correct');
       }
 
-      const activeFig = FIGURES[isCorrect ? q.author : (selectedKey || q.author)];
+      const activeFig = FIGURES[q.author] || { name: q.author, icon: "👤", correct: ["أحسنت!"], wrong: ["للأسف غلط!"] };
       const reaction = isCorrect
-        ? activeFig.correct[Math.floor(Math.random() * activeFig.correct.length)]
-        : activeFig.wrong[Math.floor(Math.random() * activeFig.wrong.length)];
+        ? (activeFig.correct ? activeFig.correct[Math.floor(Math.random() * activeFig.correct.length)] : "عفارم عليك!")
+        : (activeFig.wrong ? activeFig.wrong[Math.floor(Math.random() * activeFig.wrong.length)] : "غلط خالص!");
 
-      // Show reaction modal
-      const modal = document.getElementById('reaction-dialog');
-      document.getElementById('modal-status-badge').innerText = isCorrect ? 'إجابة صحيحة! 🎉' : (isTimeout ? 'انتهى الوقت! ⏰' : 'إجابة خاطئة! ❌');
-      document.getElementById('modal-status-badge').style.color = isCorrect ? 'var(--game-correct)' : 'var(--game-wrong)';
-      document.getElementById('modal-avatar').innerText = activeFig.icon;
-      document.getElementById('modal-author-name').innerText = activeFig.name;
-      document.getElementById('modal-speech').innerText = `« ${reaction} »`;
-      document.getElementById('modal-fact').innerText = `💡 معلومة: ${q.fact}`;
-      document.getElementById('modal-next-btn').innerText = (qIndex === 9) ? 'عرض النتيجة النهائية 🏆' : 'السؤال التالي ⬅️';
-      modal.classList.add('active');
+      // Update reaction modal
+      setTimeout(() => {
+        const modal = document.getElementById('reaction-dialog');
+        const badge = document.getElementById('modal-status-badge');
+        badge.innerText = isCorrect ? 'إجابة صحيحة! 🎉' : (isTimeout ? 'انتهى الوقت! ⏰' : 'إجابة خاطئة! ❌');
+        badge.style.color = isCorrect ? 'var(--game-correct)' : 'var(--game-wrong)';
+        document.getElementById('modal-avatar').innerText = activeFig.icon;
+        document.getElementById('modal-author-name').innerText = activeFig.name;
+        document.getElementById('modal-speech').innerText = `« ${reaction} »`;
+        document.getElementById('modal-fact').innerText = `💡 معلومة: ${q.fact}`;
+        document.getElementById('modal-next-btn').innerText = (qIndex === currentQuestions.length - 1) ? 'عرض النتيجة النهائية 🏆' : 'السؤال التالي ⬅️';
+        modal.classList.add('active');
+      }, 400);
     }
 
     function nextQuestion() {
+      playBeep('click');
       document.getElementById('reaction-dialog').classList.remove('active');
-      if (qIndex < 9) {
+      if (qIndex < currentQuestions.length - 1) {
         qIndex++;
         loadQuestion();
       } else {
@@ -814,10 +976,27 @@
     }
 
     function finishGame() {
+      playBeep('fanfare');
       logGa4Event('game_complete', { score: score, correct_count: correctCount });
       showScreen('result');
-      document.getElementById('result-score').innerText = `${correctCount} / 10`;
-      document.getElementById('result-points').innerText = `${score} نقطة 🎯`;
+
+      // Update High Score
+      let highscore = 0;
+      try {
+        highscore = parseInt(localStorage.getItem('nayzak_highscore') || '0', 10);
+        if (score > highscore) {
+          highscore = score;
+          localStorage.setItem('nayzak_highscore', highscore.toString());
+        }
+      } catch (e) {}
+
+      document.getElementById('result-score').innerText = `${correctCount} / ${currentQuestions.length}`;
+      document.getElementById('result-points').innerHTML = `
+        <div style="font-size:22px; font-weight:900; color:var(--text-primary);">${score} نقطة 🎯</div>
+        <div style="font-size:12px; color:var(--text-secondary); margin-top:4px;">
+          (سرعة: +${totalSpeedBonus} | متتالية: +${totalStreakBonus}) • أعلى رقم: <b>${highscore}</b>
+        </div>
+      `;
 
       let title = "🍎 نيوتن انصدم!";
       if (correctCount === 10) title = "🏆 أسطورة الفلاسفة - نيزك الذكاء الخارق!";
@@ -828,15 +1007,22 @@
     }
 
     function shareScore() {
+      playBeep('click');
       logGa4Event('share_click', { score: score });
-      const text = `🏆 حققت ${correctCount}/10 في لعبة نيزك: من قال هذه الجملة؟! (${score} نقطة)\nهل تقدر تتحداني؟ العب الآن: ${window.location.href}\n#نيزك #NAYZAK`;
+      const text = `🏆 حققت ${correctCount}/${currentQuestions.length} في لعبة نيزك: من قال هذه الجملة؟! (${score} نقطة)\nهل تقدر تتحداني؟ العب الآن: ${window.location.href}\n#نيزك #NAYZAK`;
       if (navigator.share) {
-        navigator.share({ title: 'لعبة نيزك NAYZAK', text: text });
+        navigator.share({ title: 'لعبة نيزك NAYZAK', text: text }).catch(() => {});
       } else {
         navigator.clipboard.writeText(text);
         alert('تم نسخ نتيجتك! يمكنك لصقها ومشاركتها في الستوري أو الواتساب.');
       }
     }
+
+    // Initialize progress stats on launch
+    document.addEventListener('DOMContentLoaded', () => {
+      updateProgressStats();
+    });
+    updateProgressStats();
   </script>
 </body>
 </html>
