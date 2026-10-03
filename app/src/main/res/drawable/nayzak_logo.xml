@@ -1,0 +1,269 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+
+    <!-- Dark Cosmic Medallion Disc for Contrast on Light Yellow Background -->
+    <path
+        android:pathData="M150,150m-140,0a140,140 0 1,1 280,0a140,140 0 1,1 -280,0"
+        android:fillColor="#080914" />
+    <path
+        android:pathData="M150,150m-138,0a138,138 0 1,1 276,0a138,138 0 1,1 -276,0"
+        android:strokeWidth="3.5"
+        android:strokeColor="#FFB300" />
+    <path
+        android:pathData="M150,150m-134,0a134,134 0 1,1 268,0a134,134 0 1,1 -268,0"
+        android:strokeWidth="1"
+        android:strokeColor="#FFE082" />
+
+    <!-- Background Space Glow -->
+    <path
+        android:pathData="M150,150m-140,0a140,140 0 1,1 280,0a140,140 0 1,1 -280,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="150"
+                android:centerY="150"
+                android:gradientRadius="140"
+                android:type="radial">
+                <item android:color="#33FF9100" android:offset="0.0" />
+                <item android:color="#1A00E5FF" android:offset="0.55" />
+                <item android:color="#00000000" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glowing Amber Neon Circular Ring -->
+    <path
+        android:pathData="M150,150m-102,0a102,102 0 1,1 204,0a102,102 0 1,1 -204,0"
+        android:strokeWidth="5"
+        android:strokeColor="#FF8F00" />
+    <path
+        android:pathData="M150,150m-102,0a102,102 0 1,1 204,0a102,102 0 1,1 -204,0"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFD54F" />
+
+    <!-- Top Golden 5-Pointed Star -->
+    <path
+        android:fillColor="#FFF59D"
+        android:pathData="M150,42 L154.5,55 L168,55 L157,63.5 L161.5,76 L150,68 L138.5,76 L143,63.5 L132,55 L145.5,55 Z" />
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M150,42 L154.5,55 L150,68 L145.5,55 Z" />
+
+    <!-- Bottom Brilliant Diamond Flare with Radiance Spikes -->
+    <!-- Horizontal & Vertical Glow Beams -->
+    <path
+        android:fillColor="#FFFF8D"
+        android:pathData="M150,228 Q150,250 168,252 Q150,254 150,276 Q150,254 132,252 Q150,250 150,228 Z" />
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M150,238 Q150,250 160,252 Q150,254 150,266 Q150,254 140,252 Q150,250 150,238 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M150,252m-4,0a4,4 0 1,1 8,0a4,4 0 1,1 -8,0" />
+
+    <!-- Metallic Golden Laurel Leaves (Left Branch) -->
+    <group>
+        <!-- Leaf 1 (Top Left) -->
+        <path android:fillColor="#FFE082" android:pathData="M128,52 C120,44 110,48 114,60 C122,58 126,55 128,52 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M128,52 C124,56 118,59 114,60 C112,54 118,48 128,52 Z" />
+        <!-- Leaf 2 -->
+        <path android:fillColor="#FFD54F" android:pathData="M110,64 C100,56 92,62 98,74 C106,70 110,66 110,64 Z" />
+        <path android:fillColor="#FF8F00" android:pathData="M110,64 C106,68 100,72 98,74 C95,68 102,60 110,64 Z" />
+        <!-- Leaf 3 -->
+        <path android:fillColor="#FFE082" android:pathData="M92,80 C80,72 74,80 82,92 C90,88 94,84 92,80 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M92,80 C88,85 84,90 82,92 C77,85 84,76 92,80 Z" />
+        <!-- Leaf 4 -->
+        <path android:fillColor="#FFD54F" android:pathData="M78,102 C66,96 62,106 72,118 C80,112 82,106 78,102 Z" />
+        <path android:fillColor="#FF8F00" android:pathData="M78,102 C75,108 73,115 72,118 C67,110 71,100 78,102 Z" />
+        <!-- Leaf 5 -->
+        <path android:fillColor="#FFE082" android:pathData="M68,128 C56,124 54,136 66,146 C74,138 74,132 68,128 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M68,128 C67,135 66,143 66,146 C58,139 61,128 68,128 Z" />
+        <!-- Leaf 6 (Lower Left) -->
+        <path android:fillColor="#FFD54F" android:pathData="M66,158 C56,158 56,170 70,178 C76,170 74,162 66,158 Z" />
+        <path android:fillColor="#FF8F00" android:pathData="M66,158 C67,166 69,174 70,178 C60,173 60,162 66,158 Z" />
+        <!-- Leaf 7 -->
+        <path android:fillColor="#FFE082" android:pathData="M74,188 C66,192 70,204 84,208 C88,198 84,192 74,188 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M74,188 C77,196 82,204 84,208 C75,206 70,196 74,188 Z" />
+        <!-- Leaf 8 -->
+        <path android:fillColor="#FFD54F" android:pathData="M90,214 C84,222 92,232 106,230 C108,220 102,214 90,214 Z" />
+        <path android:fillColor="#FF8F00" android:pathData="M90,214 C94,222 102,228 106,230 C96,231 88,224 90,214 Z" />
+        <!-- Leaf 9 (Bottom Left) -->
+        <path android:fillColor="#FFE082" android:pathData="M114,234 C110,244 122,252 134,244 C132,234 124,230 114,234 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M114,234 C120,240 128,243 134,244 C126,248 116,243 114,234 Z" />
+    </group>
+
+    <!-- Metallic Golden Laurel Leaves (Right Branch) -->
+    <group>
+        <!-- Leaf 1 (Top Right) -->
+        <path android:fillColor="#FFE082" android:pathData="M172,52 C180,44 190,48 186,60 C178,58 174,55 172,52 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M172,52 C176,56 182,59 186,60 C188,54 182,48 172,52 Z" />
+        <!-- Leaf 2 -->
+        <path android:fillColor="#FFD54F" android:pathData="M190,64 C200,56 208,62 202,74 C194,70 190,66 190,64 Z" />
+        <path android:fillColor="#FF8F00" android:pathData="M190,64 C194,68 200,72 202,74 C205,68 198,60 190,64 Z" />
+        <!-- Leaf 3 -->
+        <path android:fillColor="#FFE082" android:pathData="M208,80 C220,72 226,80 218,92 C210,88 206,84 208,80 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M208,80 C212,85 216,90 218,92 C223,85 216,76 208,80 Z" />
+        <!-- Leaf 4 -->
+        <path android:fillColor="#FFD54F" android:pathData="M222,102 C234,96 238,106 228,118 C220,112 218,106 222,102 Z" />
+        <path android:fillColor="#FF8F00" android:pathData="M222,102 C225,108 227,115 228,118 C233,110 229,100 222,102 Z" />
+        <!-- Leaf 5 -->
+        <path android:fillColor="#FFE082" android:pathData="M232,128 C244,124 246,136 234,146 C226,138 226,132 232,128 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M232,128 C233,135 234,143 234,146 C242,139 239,128 232,128 Z" />
+        <!-- Leaf 6 (Lower Right) -->
+        <path android:fillColor="#FFD54F" android:pathData="M234,158 C244,158 244,170 230,178 C224,170 226,162 234,158 Z" />
+        <path android:fillColor="#FF8F00" android:pathData="M234,158 C233,166 231,174 230,178 C240,173 240,162 234,158 Z" />
+        <!-- Leaf 7 -->
+        <path android:fillColor="#FFE082" android:pathData="M226,188 C234,192 230,204 216,208 C212,198 216,192 226,188 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M226,188 C223,196 218,204 216,208 C225,206 230,196 226,188 Z" />
+        <!-- Leaf 8 -->
+        <path android:fillColor="#FFD54F" android:pathData="M210,214 C216,222 208,232 194,230 C192,220 198,214 210,214 Z" />
+        <path android:fillColor="#FF8F00" android:pathData="M210,214 C206,222 198,228 194,230 C204,231 212,224 210,214 Z" />
+        <!-- Leaf 9 (Bottom Right) -->
+        <path android:fillColor="#FFE082" android:pathData="M186,234 C190,244 178,252 166,244 C168,234 176,230 186,234 Z" />
+        <path android:fillColor="#FFA000" android:pathData="M186,234 C180,240 172,243 166,244 C174,248 184,243 186,234 Z" />
+    </group>
+
+    <!-- ============================================================== -->
+    <!-- CENTRAL 3D TYPOGRAPHY "Nayzak" with Title Case + Cyber "AI"     -->
+    <!-- ============================================================== -->
+
+    <!-- Deep 3D Dark Shadow Layer Behind Entire Lockup (Shifted +3, +5) -->
+    <!-- "N" Shadow -->
+    <path android:fillColor="#150500" android:pathData="M21,126 L40,126 L55,157 L55,126 L69,126 L69,178 L53,178 L35,145 L35,178 L21,178 Z" />
+    <!-- "a" Shadow -->
+    <path android:fillColor="#150500" android:pathData="M73,153 C73,142 82,136 94,136 C106,136 114,141 114,151 L114,178 L101,178 L101,172 C98,177 91,180 84,180 C74,180 67,173 67,163 C67,152 76,146 89,146 L100,146 L100,144 C100,139 96,137 90,137 C85,137 81,139 80,143 Z" />
+    <!-- "y" Shadow (Descending Tail!) -->
+    <path android:fillColor="#150500" android:pathData="M117,138 L131,138 L141,162 L150,138 L163,138 L147,178 L142,192 C138,200 131,204 122,204 L114,204 L114,192 L121,192 C125,192 128,190 130,185 L133,178 Z" />
+    <!-- "z" Shadow -->
+    <path android:fillColor="#150500" android:pathData="M165,138 L191,138 L191,147 L177,168 L192,168 L192,178 L164,178 L164,169 L179,148 L165,148 Z" />
+    <!-- "a" Shadow -->
+    <path android:fillColor="#150500" android:pathData="M196,153 C196,142 205,136 217,136 C229,136 237,141 237,151 L237,178 L224,178 L224,172 C221,177 214,180 207,180 C197,180 190,173 190,163 C190,152 199,146 212,146 L223,146 L223,144 C223,139 219,137 213,137 C208,137 204,139 203,143 Z" />
+    <!-- "k" Shadow -->
+    <path android:fillColor="#150500" android:pathData="M239,126 L253,126 L253,151 L268,138 L283,138 L267,155 L285,178 L270,178 L257,162 L253,166 L253,178 L239,178 Z" />
+    <!-- "AI" Dark Bevel Shadow -->
+    <path android:fillColor="#040D1A" android:pathData="M232,130 L293,130 L293,184 L232,184 Z" />
+
+    <!-- 3D Mid-Tone Bevel Layer for "Nayzak" (#D84315 -> #FF6D00) -->
+    <!-- "N" -->
+    <path android:fillColor="#E65100" android:pathData="M18,124 L37,124 L52,155 L52,124 L66,124 L66,176 L50,176 L32,143 L32,176 L18,176 Z" />
+    <!-- "a" -->
+    <path android:fillColor="#E65100" android:pathData="M70,151 C70,140 79,134 91,134 C103,134 111,139 111,149 L111,176 L98,176 L98,170 C95,175 88,178 81,178 C71,178 64,171 64,161 C64,150 73,144 86,144 L97,144 L97,142 C97,137 93,135 87,135 C82,135 78,137 77,141 Z" />
+    <!-- "y" -->
+    <path android:fillColor="#E65100" android:pathData="M114,136 L128,136 L138,160 L147,136 L160,136 L144,176 L139,190 C135,198 128,202 119,202 L111,202 L111,190 L118,190 C122,190 125,188 127,183 L130,176 Z" />
+    <!-- "z" -->
+    <path android:fillColor="#E65100" android:pathData="M162,136 L188,136 L188,145 L174,166 L189,166 L189,176 L161,176 L161,167 L176,146 L162,146 Z" />
+    <!-- "a" -->
+    <path android:fillColor="#E65100" android:pathData="M193,151 C193,140 202,134 214,134 C226,134 234,139 234,149 L234,176 L221,176 L221,170 C218,175 211,178 204,178 C194,178 187,171 187,161 C187,150 196,144 209,144 L220,144 L220,142 C220,137 216,135 210,135 C205,135 201,137 200,141 Z" />
+    <!-- "k" -->
+    <path android:fillColor="#E65100" android:pathData="M236,124 L250,124 L250,149 L265,136 L280,136 L264,153 L282,176 L267,176 L254,160 L250,164 L250,176 L236,176 Z" />
+
+    <!-- FRONT GRADIENT FACE FOR "Nayzak" (Brilliant Golden-Yellow to Bright Orange) -->
+    <!-- "N" -->
+    <path android:pathData="M16,122 L35,122 L50,153 L50,122 L64,122 L64,174 L48,174 L30,141 L30,174 L16,174 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="40" android:startY="122" android:endX="40" android:endY="174" android:type="linear">
+                <item android:color="#FFF176" android:offset="0.0" />
+                <item android:color="#FFB300" android:offset="0.45" />
+                <item android:color="#FF6D00" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- "a" -->
+    <path android:pathData="M68,149 C68,138 77,132 89,132 C101,132 109,137 109,147 L109,174 L96,174 L96,168 C93,173 86,176 79,176 C69,176 62,169 62,159 C62,148 71,142 84,142 L95,142 L95,140 C95,135 91,133 85,133 C80,133 76,135 75,139 Z M95,154 L85,154 C79,154 75,157 75,161 C75,165 78,168 83,168 C89,168 95,163 95,158 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="85" android:startY="132" android:endX="85" android:endY="176" android:type="linear">
+                <item android:color="#FFF176" android:offset="0.0" />
+                <item android:color="#FFB300" android:offset="0.45" />
+                <item android:color="#FF6D00" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- "y" (Long Descending Tail) -->
+    <path android:pathData="M112,134 L126,134 L136,158 L145,134 L158,134 L142,174 L137,188 C133,196 126,200 117,200 L109,200 L109,188 L116,188 C120,188 123,186 125,181 L128,174 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="133" android:startY="134" android:endX="133" android:endY="200" android:type="linear">
+                <item android:color="#FFF176" android:offset="0.0" />
+                <item android:color="#FFB300" android:offset="0.45" />
+                <item android:color="#FF6D00" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- "z" -->
+    <path android:pathData="M160,134 L186,134 L186,143 L172,164 L187,164 L187,174 L159,174 L159,165 L174,144 L160,144 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="173" android:startY="134" android:endX="173" android:endY="174" android:type="linear">
+                <item android:color="#FFF176" android:offset="0.0" />
+                <item android:color="#FFB300" android:offset="0.45" />
+                <item android:color="#FF6D00" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- "a" -->
+    <path android:pathData="M191,149 C191,138 200,132 212,132 C224,132 232,137 232,147 L232,174 L219,174 L219,168 C216,173 209,176 202,176 C192,176 185,169 185,159 C185,148 194,142 207,142 L218,142 L218,140 C218,135 214,133 208,133 C203,133 199,135 198,139 Z M218,154 L208,154 C202,154 198,157 198,161 C198,165 201,168 206,168 C212,168 218,163 218,158 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="208" android:startY="132" android:endX="208" android:endY="176" android:type="linear">
+                <item android:color="#FFF176" android:offset="0.0" />
+                <item android:color="#FFB300" android:offset="0.45" />
+                <item android:color="#FF6D00" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- "k" -->
+    <path android:pathData="M234,122 L248,122 L248,147 L263,134 L278,134 L262,151 L280,174 L265,174 L252,158 L248,162 L248,174 L234,174 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="257" android:startY="122" android:endX="257" android:endY="174" android:type="linear">
+                <item android:color="#FFF176" android:offset="0.0" />
+                <item android:color="#FFB300" android:offset="0.45" />
+                <item android:color="#FF6D00" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- ============================================================== -->
+    <!-- "AI" ELECTRIC NEON BLUE/CYAN CYBERNETIC LETTERS WITH CIRCUITS   -->
+    <!-- ============================================================== -->
+
+    <!-- Cyan Glow Aura behind AI -->
+    <path
+        android:fillColor="#0A1E35"
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="2.5"
+        android:pathData="M217,126 L287,126 A6,6 0 0,1 293,132 L293,174 A6,6 0 0,1 287,180 L217,180 A6,6 0 0,1 211,174 L211,132 A6,6 0 0,1 217,126 Z" />
+
+    <!-- Electric Cyan Glowing "A" -->
+    <path
+        android:pathData="M225,172 L239,132 L251,132 L265,172 L253,172 L249,160 L240,160 L236,172 Z M242,150 L247,150 L245,142 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="245" android:startY="132" android:endX="245" android:endY="172" android:type="linear">
+                <item android:color="#E0F7FA" android:offset="0.0" />
+                <item android:color="#00E5FF" android:offset="0.5" />
+                <item android:color="#0288D1" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Electric Cyan Glowing "I" -->
+    <path
+        android:pathData="M269,132 L281,132 L281,172 L269,172 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="275" android:startY="132" android:endX="275" android:endY="172" android:type="linear">
+                <item android:color="#E0F7FA" android:offset="0.0" />
+                <item android:color="#00E5FF" android:offset="0.5" />
+                <item android:color="#0288D1" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Circuit Lines & Nodes inside "AI" -->
+    <!-- Circuit dot 1 on crossbar of A -->
+    <path android:fillColor="#00E5FF" android:pathData="M245,150m-2.5,0a2.5,2.5 0 1,1 5,0a2.5,2.5 0 1,1 -5,0" />
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="1" android:pathData="M245,146 L245,154" />
+
+    <!-- Circuit dot 2 & trace in I -->
+    <path android:fillColor="#FFFFFF" android:pathData="M275,152m-2.5,0a2.5,2.5 0 1,1 5,0a2.5,2.5 0 1,1 -5,0" />
+    <path android:strokeColor="#00E5FF" android:strokeWidth="1.5" android:pathData="M275,138 L275,149" />
+    <path android:strokeColor="#00E5FF" android:strokeWidth="1.5" android:pathData="M275,155 L275,166" />
+</vector>

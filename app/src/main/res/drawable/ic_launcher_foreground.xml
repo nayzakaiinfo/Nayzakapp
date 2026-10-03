@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Laurel Wreath Ring Outer Glow -->
+    <path
+        android:strokeColor="#FFC107"
+        android:strokeWidth="1.8"
+        android:fillColor="#00000000"
+        android:pathData="M 32,54 A 22,22 0 1 1 76,54 A 22,22 0 1 1 32,54" />
+
+    <!-- Top Star -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M 54,23 L 56.5,29.5 L 63,30 L 58,34 L 59.5,40.5 L 54,37 L 48.5,40.5 L 50,34 L 45,30 L 51.5,29.5 Z" />
+
+    <!-- Bottom Spark -->
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M 54,77 L 55.5,82 L 60,83.5 L 55.5,85 L 54,90 L 52.5,85 L 48,83.5 L 52.5,82 Z" />
+
+    <!-- Left Laurel Leaves -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M 33,35 C 28,33 26,38 29,41 C 32,44 35,40 33,35 Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M 27,45 C 22,45 22,50 25,53 C 28,55 31,51 27,45 Z" />
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M 26,56 C 21,58 22,64 26,65 C 29,66 31,61 26,56 Z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M 30,68 C 26,71 28,77 32,77 C 35,77 36,71 30,68 Z" />
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M 37,79 C 34,84 39,88 43,86 C 46,84 44,79 37,79 Z" />
+
+    <!-- Right Laurel Leaves -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M 75,35 C 80,33 82,38 79,41 C 76,44 73,40 75,35 Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M 81,45 C 86,45 86,50 83,53 C 80,55 77,51 81,45 Z" />
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M 82,56 C 87,58 86,64 82,65 C 79,66 77,61 82,56 Z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M 78,68 C 82,71 80,77 76,77 C 73,77 72,71 78,68 Z" />
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M 71,79 C 74,84 69,88 65,86 C 62,84 64,79 71,79 Z" />
+
+    <!-- Center Meteor / "N" Dynamic Monogram with Golden Orange & Neon Cyan -->
+    <!-- Stylized Game "N" shape with 3D gradient look -->
+    <path
+        android:fillColor="#FF6D00"
+        android:pathData="M 37,67 L 43,41 L 49,41 L 57,59 L 63,41 L 69,41 L 63,67 L 57,67 L 49,49 L 43,67 Z" />
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M 37.5,65 L 43,42 L 47,42 L 55,60 L 56.5,56 L 49.5,41 L 43,41 L 37.5,65 Z" />
+
+    <!-- Neon Cyan Core Accent ("AI" lightning spark) -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M 59,43 L 67,43 L 62,65 L 57,65 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 61.5,45 L 65,45 L 61,63 L 58.5,63 Z" />
+
+    <!-- Small bright star sparkle in center -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 54,49 L 55,52 L 58,53 L 55,54 L 54,57 L 53,54 L 50,53 L 53,52 Z" />
+
+</vector>

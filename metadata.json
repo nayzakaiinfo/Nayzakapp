@@ -1,0 +1,6 @@
+{
+  "name": "NAYZAK",
+  "description": "لعبة نيزك: من قال هذه الجملة؟ لعبة مسابقات عربية شيقة وممتعة مع 6 شخصيات تاريخية وردود كوميدية مميزة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>نيزك - من قال هذه الجملة؟ | NAYZAK</title>
+  <meta name="description" content="تحدي نيزك: من قال هذه الجملة؟ خمن قائل الاقتباس بين 6 من عظماء التاريخ مع تعليقات مضحكة بالشامي!">
+  <meta name="theme-color" content="#CA8A04">
+
+  <!-- Professional Favicon & App Icons (Data URI - No external assets required) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23000000' stroke='%23FFB300' stroke-width='4'/%3E%3Cpolygon points='50,8 53,16 61,17 55,22 57,30 50,25 43,30 45,22 39,17 47,16' fill='%23FFE082'/%3E%3Ctext x='50' y='58' font-size='22' font-weight='900' fill='%23FFB300' text-anchor='middle' font-family='sans-serif'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23000000' stroke='%23FFB300' stroke-width='4'/%3E%3Cpolygon points='50,8 53,16 61,17 55,22 57,30 50,25 43,30 45,22 39,17 47,16' fill='%23FFE082'/%3E%3Ctext x='50' y='58' font-size='22' font-weight='900' fill='%23FFB300' text-anchor='middle' font-family='sans-serif'%3EN%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph & Social Cards (Instagram DM, WhatsApp, Story preview) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="نيزك - من قال هذه الجملة؟ | NAYZAK">
+  <meta property="og:description" content="تحدي نيزك الثقافي: خمن قائل الاقتباس بين عظماء التاريخ مع تعليقات وردود كوميدية بالشامي! كم نقطة رح تجيب؟">
+  <meta property="og:site_name" content="NAYZAK AI">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="نيزك - من قال هذه الجملة؟ | NAYZAK">
+  <meta name="twitter:description" content="تحدي نيزك الثقافي: خمن قائل الاقتباس بين عظماء التاريخ مع تعليقات مضحكة بالشامي!">
+
+  <!-- iOS & Android Web App Capability -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="نيزك NAYZAK">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    const GA4_MEASUREMENT_ID = 'G-MEASUREMENT_ID'; // Replace with your GA4 Measurement ID
+    if (GA4_MEASUREMENT_ID.startsWith('G-') && GA4_MEASUREMENT_ID !== 'G-MEASUREMENT_ID') {
+      gtag('config', GA4_MEASUREMENT_ID, { 'anonymize_ip': true });
+    }
+    function logGa4Event(name, params) {
+      console.log('📊 GA4 Event:', name, params);
+      if (typeof gtag === 'function') {
+        gtag('event', name, params);
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --space-dark: #CA8A04;
+      --space-card: #E0F2FE;
+      --space-card-elevated: #BAE6FD;
+      --space-border: #0284C7;
+      --laurel-gold: #0284C7;
+      --laurel-gold-light: #0C4A6E;
+      --nayzak-orange: #0284C7;
+      --nayzak-orange-light: #FF7A00;
+      --neon-cyan: #0284C7;
+      --game-correct: #10B981;
+      --game-wrong: #EF4444;
+      --text-primary: #0F172A;
+      --text-secondary: #0369A1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: 'Cairo', system-ui, sans-serif;
+    }
+    body {
+      background: radial-gradient(circle at top, #FACC15 0%, #CA8A04 100%);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow-x: hidden;
+    }
+    #app-container {
+      width: 100%;
+      max-width: 480px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 16px 20px 24px;
+      position: relative;
+    }
+    .screen {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      animation: fadeIn 0.3s ease;
+    }
+    .screen.active {
+      display: flex;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Logo Header */
+    .logo-box {
+      position: relative;
+      width: 170px;
+      height: 170px;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .wreath-ring {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 3px solid var(--laurel-gold);
+      box-shadow: 0 0 25px rgba(255, 179, 0, 0.4), inset 0 0 15px rgba(0, 229, 255, 0.2);
+    }
+    .wreath-star {
+      position: absolute;
+      top: -12px;
+      font-size: 20px;
+      color: #FFF;
+      text-shadow: 0 0 10px #FFD54F;
+    }
+    .logo-text-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 2;
+    }
+    .brand-title {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--nayzak-orange-light);
+      text-shadow: 0 2px 8px rgba(255, 109, 0, 0.6);
+      letter-spacing: 1px;
+    }
+    .brand-ai-badge {
+      background: #003852;
+      border: 1.5px solid var(--neon-cyan);
+      color: var(--neon-cyan);
+      font-weight: 800;
+      font-size: 14px;
+      padding: 1px 7px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    }
+    .game-badge {
+      background: #FEF3C7;
+      border: 1.5px solid var(--laurel-gold);
+      padding: 6px 18px;
+      border-radius: 20px;
+      color: var(--laurel-gold-light);
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    /* Common Card */
+    .card {
+      background: var(--space-card);
+      border: 1.5px solid var(--space-border);
+      border-radius: 20px;
+      padding: 18px;
+      width: 100%;
+      box-shadow: 0 4px 16px rgba(217, 119, 6, 0.08);
+      margin-bottom: 16px;
+    }
+    .card-title {
+      color: var(--laurel-gold-light);
+      font-size: 18px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      color: var(--text-secondary);
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* Action Buttons */
+    .btn {
+      width: 100%;
+      height: 56px;
+      border-radius: 16px;
+      border: none;
+      font-size: 18px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:active {
+      transform: scale(0.98);
+    }
+    .btn-orange {
+      background: var(--nayzak-orange);
+      color: #090912;
+      box-shadow: 0 8px 20px rgba(255, 109, 0, 0.4);
+    }
+    .btn-cyan {
+      background: var(--neon-cyan);
+      color: #090912;
+      box-shadow: 0 8px 20px rgba(0, 229, 255, 0.4);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #33375E;
+      color: var(--laurel-gold-light);
+    }
+    .google-play-banner {
+      background: #111424;
+      border: 1.5px solid var(--neon-cyan);
+      border-radius: 16px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      text-decoration: none;
+      color: #FFF;
+      margin-top: 14px;
+    }
+
+    /* Characters Carousel */
+    .char-row {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      width: 100%;
+      padding: 8px 2px;
+      margin-bottom: 16px;
+      scrollbar-width: none;
+    }
+    .char-row::-webkit-scrollbar { display: none; }
+    .char-item {
+      flex: 0 0 95px;
+      background: var(--space-card);
+      border: 1px solid #2B2D4F;
+      border-radius: 16px;
+      padding: 12px 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 13px;
+    }
+    .char-avatar-img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 2px solid var(--laurel-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      background: #1B1E38;
+      margin-bottom: 6px;
+    }
+
+    /* Quiz Game Screen */
+    .top-stats-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    .pill {
+      background: #1B1D36;
+      border: 1px solid #2E325C;
+      padding: 5px 12px;
+      border-radius: 16px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .timer-container {
+      width: 100%;
+      margin-bottom: 14px;
+    }
+    .timer-bar-bg {
+      width: 100%;
+      height: 10px;
+      background: #141529;
+      border: 1px solid #2A2D4A;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .timer-bar-fill {
+      height: 100%;
+      width: 100%;
+      background: var(--neon-cyan);
+      transition: width 1s linear, background-color 0.3s;
+    }
+    .timer-bar-fill.urgent {
+      background: var(--game-wrong);
+      animation: pulse 0.5s infinite alternate;
+    }
+    @keyframes pulse {
+      from { opacity: 1; }
+      to { opacity: 0.6; }
+    }
+
+    .quote-card {
+      background: var(--space-card);
+      border: 2px solid var(--space-border);
+      border-radius: 20px;
+      padding: 22px 18px;
+      text-align: center;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(2, 132, 199, 0.15);
+      margin-bottom: 18px;
+    }
+    .quote-text {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin: 12px 0;
+    }
+
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+    .option-card {
+      background: var(--space-card);
+      border: 1.8px solid var(--space-border);
+      border-radius: 16px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      color: var(--text-primary);
+      font-weight: 800;
+      transition: all 0.2s;
+    }
+    .option-card:hover {
+      background: var(--space-card-elevated);
+      transform: translateY(-2px);
+    }
+    .option-card.correct {
+      background: #D1FAE5 !important;
+      border-color: var(--game-correct) !important;
+      color: #065F46 !important;
+    }
+    .option-card.wrong {
+      background: #FEE2E2 !important;
+      border-color: var(--game-wrong) !important;
+      color: #991B1B !important;
+    }
+
+    /* Modal Reaction Dialog */
+    .dialog-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 100;
+    }
+    .dialog-overlay.active {
+      display: flex;
+    }
+    .dialog-card {
+      background: var(--space-card);
+      border: 2px solid var(--space-border);
+      color: var(--text-primary);
+      border-radius: 24px;
+      padding: 22px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 10px 35px rgba(2, 132, 199, 0.35);
+      animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes popIn {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .speech-bubble {
+      background: var(--space-card-elevated);
+      border: 1.5px solid var(--space-border);
+      color: var(--text-primary);
+      border-radius: 16px;
+      padding: 14px;
+      margin: 14px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app-container">
+
+    <!-- 1. HOME SCREEN -->
+    <div id="screen-home" class="screen active">
+      <div class="logo-box" style="width:200px; height:200px;">
+        <svg viewBox="0 0 200 200" width="200" height="200" style="position:absolute; top:0; left:0;">
+          <defs>
+            <radialGradient id="wreathGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FFB300" stop-opacity="0.3"/>
+              <stop offset="70%" stop-color="#00E5FF" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFE082"/>
+              <stop offset="40%" stop-color="#FFB300"/>
+              <stop offset="80%" stop-color="#FF8F00"/>
+              <stop offset="100%" stop-color="#D97706"/>
+            </linearGradient>
+            <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#FFA000"/>
+              <stop offset="50%" stop-color="#FF6D00"/>
+              <stop offset="100%" stop-color="#D84315"/>
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="100" r="92" fill="url(#wreathGlow)"/>
+          <!-- Golden circular ring with pitch black center -->
+          <circle cx="100" cy="100" r="76" fill="#000000" stroke="url(#goldGrad)" stroke-width="3.5" filter="drop-shadow(0 0 6px rgba(255,179,0,0.7))"/>
+          <circle cx="100" cy="100" r="72" fill="none" stroke="#FFD54F" stroke-width="1" stroke-opacity="0.5"/>
+          <!-- Top 5-pointed Star -->
+          <polygon points="100,10 104,21 115,22 107,29 110,40 100,34 90,40 93,29 85,22 96,21" fill="#FFE082" filter="drop-shadow(0 0 8px #FFD54F)"/>
+          <!-- Bottom Diamond Sparkle -->
+          <polygon points="100,165 103,174 112,177 103,180 100,189 97,180 88,177 97,174" fill="#FFB300" filter="drop-shadow(0 0 6px #FFA000)"/>
+          <!-- Laurel Leaves (Left side) -->
+          <g fill="url(#goldGrad)">
+            <ellipse cx="64" cy="38" rx="8" ry="4" transform="rotate(-30 64 38)"/>
+            <ellipse cx="44" cy="56" rx="8" ry="4" transform="rotate(-45 44 56)"/>
+            <ellipse cx="32" cy="78" rx="8" ry="4" transform="rotate(-65 32 78)"/>
+            <ellipse cx="28" cy="102" rx="8" ry="4" transform="rotate(-85 28 102)"/>
+            <ellipse cx="32" cy="126" rx="8" ry="4" transform="rotate(-110 32 126)"/>
+            <ellipse cx="46" cy="146" rx="8" ry="4" transform="rotate(-130 46 146)"/>
+            <ellipse cx="66" cy="162" rx="8" ry="4" transform="rotate(-150 66 162)"/>
+          </g>
+          <!-- Laurel Leaves (Right side) -->
+          <g fill="url(#goldGrad)">
+            <ellipse cx="136" cy="38" rx="8" ry="4" transform="rotate(30 136 38)"/>
+            <ellipse cx="156" cy="56" rx="8" ry="4" transform="rotate(45 156 56)"/>
+            <ellipse cx="168" cy="78" rx="8" ry="4" transform="rotate(65 168 78)"/>
+            <ellipse cx="172" cy="102" rx="8" ry="4" transform="rotate(85 172 102)"/>
+            <ellipse cx="168" cy="126" rx="8" ry="4" transform="rotate(110 168 126)"/>
+            <ellipse cx="154" cy="146" rx="8" ry="4" transform="rotate(130 154 146)"/>
+            <ellipse cx="134" cy="162" rx="8" ry="4" transform="rotate(150 134 162)"/>
+          </g>
+        </svg>
+
+        <!-- Center 3D Typography "NayzakAI" matching uploaded logo -->
+        <div class="logo-text-row" style="margin-top:10px; z-index:3;">
+          <span class="brand-title" style="font-size:32px; font-weight:900; background: linear-gradient(180deg, #FFF176 0%, #FFB300 45%, #FF6D00 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 3px 0 #3E1000) drop-shadow(0 6px 14px rgba(255, 109, 0, 0.8)); letter-spacing:0.5px;">Nayzak</span>
+          <span class="brand-ai-badge" style="font-size:18px; padding:3px 9px; margin-right:2px; background: linear-gradient(180deg, #022033, #00121F); border: 2px solid #00E5FF; color:#00E5FF; box-shadow: 0 0 15px rgba(0,229,255,0.7);">AI</span>
+        </div>
+      </div>
+      <div class="game-badge">من قال هذه الجملة؟ 📜</div>
+
+      <div class="card" style="margin-top: 18px;">
+        <div class="card-title">« تحدّي عظماء التاريخ »</div>
+        <div class="card-desc">
+          10 مقولات حكيمة وخالدة.. هل تقدر تحزر مين قالها بين سقراط، ديكارت، نابليون، فرويد، أينشتاين، ونيوتن؟ واستمتع بردودهم الكوميدية بالشامي!
+        </div>
+      </div>
+
+      <!-- Category Selector Chips -->
+      <div style="width: 100%; margin-top: 14px;">
+        <div style="font-size: 13px; font-weight: 800; color: var(--laurel-gold); margin-bottom: 8px;">اختر تصنيف الجولة 🎯:</div>
+        <div style="display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px;" id="cat-chips">
+          <button class="pill active-cat" onclick="setCategory('الكل', this)">🌟 الكل</button>
+          <button class="pill" onclick="setCategory('فلسفة وحكمة', this)">💡 فلسفة</button>
+          <button class="pill" onclick="setCategory('علوم واكتشاف', this)">🔬 علوم</button>
+          <button class="pill" onclick="setCategory('أدب وفنون', this)">🎨 أدب</button>
+          <button class="pill" onclick="setCategory('تاريخ وقيادة', this)">👑 قيادة</button>
+          <button class="pill" onclick="setCategory('علم النفس والتفكير', this)">🧠 تفكير</button>
+        </div>
+      </div>
+
+      <button class="btn btn-orange" onclick="startGame()" style="margin-top: 16px;">
+        <span>ابدأ جولة ذكية (10 أسئلة بدون تكرار)</span>
+        <span>🚀</span>
+      </button>
+
+      <!-- Smart Exploration Progress -->
+      <div style="width: 100%; margin-top: 14px; background: rgba(0,0,0,0.5); border: 1.5px solid var(--space-border); border-radius: 12px; padding: 10px 14px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; font-size:12px; font-weight:700;">
+          <span style="color:var(--laurel-gold-light)">بنك الأسئلة الذكي 📜</span>
+          <span style="color:var(--neon-cyan)" id="web-seen-counter">0 / 40 مستكشفة</span>
+        </div>
+        <div style="height:6px; background:#2A1A05; border-radius:4px; margin-top:6px; overflow:hidden;">
+          <div id="web-progress-fill" style="height:100%; width:0%; background:var(--game-correct); transition:width 0.4s;"></div>
+        </div>
+      </div>
+
+      <div style="width: 100%; margin-top: 20px;">
+        <div style="font-weight: 700; color: var(--laurel-gold-light); margin-bottom: 8px;">أبرز حكماء التحدي:</div>
+        <div class="char-row">
+          <div class="char-item"><div class="char-avatar-img">🏛️</div><b>سقراط</b><small style="color:var(--laurel-gold)">أبو الفلسفة</small></div>
+          <div class="char-item"><div class="char-avatar-img">📐</div><b>ديكارت</b><small style="color:var(--neon-cyan)">أنا أفكر</small></div>
+          <div class="char-item"><div class="char-avatar-img">⚔️</div><b>نابليون</b><small style="color:#EF4444">قاهر المستحيل</small></div>
+          <div class="char-item"><div class="char-avatar-img">🛋️</div><b>فرويد</b><small style="color:#A78BFA">العقل الباطن</small></div>
+          <div class="char-item"><div class="char-avatar-img">⚡</div><b>أينشتاين</b><small style="color:#34D399">النسبية</small></div>
+          <div class="char-item"><div class="char-avatar-img">🍎</div><b>نيوتن</b><small style="color:#F472B6">الجاذبية</small></div>
+          <div class="char-item"><div class="char-avatar-img">🎭</div><b>شكسبير</b><small style="color:#F59E0B">المسرح</small></div>
+          <div class="char-item"><div class="char-avatar-img">🐎</div><b>المتنبي</b><small style="color:#D97706">شاعر العرب</small></div>
+          <div class="char-item"><div class="char-avatar-img">🎨</div><b>دا فينشي</b><small style="color:#EAB308">عبقري النهضة</small></div>
+          <div class="char-item"><div class="char-avatar-img">🏰</div><b>صلاح الدين</b><small style="color:#10B981">الفارس النبيل</small></div>
+        </div>
+      </div>
+
+      <!-- Google Play Store CTA Banner -->
+      <a class="google-play-banner" href="#playstore" onclick="alert('تطبيق NAYZAK متوفر على Google Play! حمل ملف APK أو ثبته من المتجر.')">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="font-size:26px;">▶️</span>
+          <div>
+            <div style="font-weight:800; font-size:14px; color:var(--neon-cyan);">حَمّل التطبيق من Google Play</div>
+            <div style="font-size:11px; color:var(--text-secondary);">تجربة كاملة بأعلى أداء على هاتفك</div>
+          </div>
+        </div>
+        <span style="font-size:20px;">⬅️</span>
+      </a>
+    </div>
+
+    <!-- 2. QUIZ SCREEN -->
+    <div id="screen-quiz" class="screen">
+      <div class="top-stats-row">
+        <div class="pill" id="question-counter">السؤال 1 من 10</div>
+        <div class="pill" style="color:var(--laurel-gold-light); border-color:var(--laurel-gold);" id="score-counter">0 نقطة 🏆</div>
+      </div>
+
+      <div class="timer-container">
+        <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:700; margin-bottom:4px;">
+          <span id="timer-text" style="color:var(--neon-cyan)">الوقت: 15 ث</span>
+          <span id="streak-text" style="color:var(--nayzak-orange)">🔥 x1</span>
+        </div>
+        <div class="timer-bar-bg">
+          <div id="timer-fill" class="timer-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <div style="font-size:12px; color:var(--neon-cyan); font-weight:700;" id="quote-category">فلسفة وحكمة</div>
+        <div class="quote-text" id="quote-content">« الحياة التي لا تُختبر لا تستحق أن تُعاش »</div>
+        <div style="font-size:13px; color:var(--laurel-gold); font-weight:700;">من قائل هذه الجملة؟</div>
+      </div>
+
+      <div class="options-grid" id="options-container">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- 3. RESULT SCREEN -->
+    <div id="screen-result" class="screen">
+      <div class="card" style="text-align: center; border-color: var(--laurel-gold); padding: 26px 18px;">
+        <div style="font-size: 50px; margin-bottom: 8px;">🏆</div>
+        <div style="font-size: 22px; font-weight: 900; color: var(--laurel-gold-light);" id="result-title">أسطورة الفلاسفة!</div>
+        <div style="font-size: 44px; font-weight: 900; margin: 10px 0;" id="result-score">8 / 10</div>
+        <div style="font-size: 16px; color: var(--neon-cyan); font-weight: 700;" id="result-points">1,280 نقطة 🎯</div>
+      </div>
+
+      <button class="btn btn-cyan" onclick="shareScore()" style="margin-bottom: 12px;">
+        <span>شارك نتيجتي وتحدّى أصحابك</span>
+        <span>🚀</span>
+      </button>
+
+      <button class="btn btn-orange" onclick="startGame()" style="margin-bottom: 12px;">
+        <span>العب جولة تانية (10 أسئلة)</span>
+        <span>🔁</span>
+      </button>
+
+      <button class="btn btn-outline" onclick="showScreen('home')">
+        <span>العودة للرئيسية</span>
+        <span>🏠</span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- REACTION MODAL -->
+  <div id="reaction-dialog" class="dialog-overlay">
+    <div class="dialog-card">
+      <div id="modal-status-badge" style="font-weight: 800; font-size: 18px; margin-bottom: 10px;">إجابة صحيحة! 🎉</div>
+      <div id="modal-avatar" style="font-size: 50px; margin: 8px auto;">🏛️</div>
+      <div id="modal-author-name" style="font-size: 20px; font-weight: 800; color: var(--laurel-gold-light);">سقراط</div>
+      <div class="speech-bubble" id="modal-speech">« عفارم عليك! طلعت بتعرف تفكر متلي.. »</div>
+      <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 16px;" id="modal-fact">معلومة تاريخية</div>
+      <button class="btn btn-orange" onclick="nextQuestion()" id="modal-next-btn">السؤال التالي ⬅️</button>
+    </div>
+  </div>
+
+  <script>
+    const FIGURES = {
+      socrates: {
+        name: "سقراط",
+        icon: "🏛️",
+        correct: ["عفارم عليك! طلعت بتعرف تفكر متلي.. مع إني بعرف إني ما بعرف شي!", "يا عيني ع هالمخ النضيف! بتستاهل كاسة عصير بدون شوكران!"],
+        wrong: ["له يا زلمة! لهون وصل فيك الجهل؟ روح تفلسف بعيد الله يرضى عليك!", "مع إني ما بعرف شي، بس متأكد إنو هالجوااب غلط خالص!"]
+      },
+      descartes: {
+        name: "ديكارت",
+        icon: "📐",
+        correct: ["أنا أفكّر إذاً أنا صح وأنت صح! يا عيني ع المنطق والذكاء!", "شكّيت بكل شي بالكون، بس بذكائك مستحيل أشك!"],
+        wrong: ["شكلك ما فكّرت أبداً قبل ما تختار.. روح شكّ بحالك وبخياراتك!", "وين المنطق بالموضوع؟ هاد جواب بدون أي كوجيتو!"]
+      },
+      napoleon: {
+        name: "نابليون",
+        icon: "⚔️",
+        correct: ["برافو يا بطل! انتصار عظيم متل معركة أوسترليتز.. قاهر المستحيل!", "كلمة مستحيل مو بقاموسي، وشكلو مو بقاموسك كمان!"],
+        wrong: ["شو هالهزيمة الساحقة؟! حسّستني بواترلو تانية بنص اللعبة!", "انسحاب تكتيكي فوراً! هاد الجواب دخلنا بحيط عسكري مسدود!"]
+      },
+      freud: {
+        name: "فرويد",
+        icon: "🛋️",
+        correct: ["تحليلي النفسي بقلك: أنت عبقري وعقلك الباطن شغال مية مية!", "الأنا العليا والأنا السفلى متفقين عندك ع الصح.. ذكاء خارق!"],
+        wrong: ["واضح إنه عندك عقدة طفولة مع هالسؤال.. بدك جلسة تحليل سريعة!", "زلة فكرية ولا زلة لاوعي؟ عقلك الباطن وداك بداهية هالمرة!"]
+      },
+      einstein: {
+        name: "أينشتاين",
+        icon: "⚛️",
+        correct: ["نسبيّاً.. جوابك كان أسرع من سرعة الضوء يا داهية!", "E = mc².. وطاقتك بالجواب حطمت كل المعادلات الفيزيائية!"],
+        wrong: ["الغباء مو نسبي بهالحالة.. حتى قانون الجاذبية انصدم من جوابك!", "معقول يا زلمة؟ ضيعت بين النظرية النسبية وبين البطاطا المقلية؟!"]
+      },
+      newton: {
+        name: "نيوتن",
+        icon: "🍎",
+        correct: ["لك سقطت التفاحة ولقطت الجواب بالملّي! كل فعل له رد فعل عبقري!", "تفاحة دهب لإلك اليوم.. تسلم هالأفكار الموزونة!"],
+        wrong: ["وقعت التفاحة على راسي وما وجعتني قد ما وجعني جوابك هاد!", "شكلو التفاحة وقعت ع رأسك إنت بدل ما توقع ع راسي!"]
+      }
+    };
+
+    const QUOTES_POOL = [
+      { quote: "الحياة التي لا تُختبر لا تستحق أن تُعاش.", author: "socrates", cat: "فلسفة وحكمة", fact: "قال سقراط هذه الجملة في دفاعه الشهير أمام محكمة أثينا." },
+      { quote: "كل ما أعرفه هو أنني لا أعرف شيئاً.", author: "socrates", cat: "فلسفة ومعرفة", fact: "اعتبر حكيم اليونان لأنه الوحيد الذي يعترف بجهله." },
+      { quote: "أنا أفكّر، إذن أنا موجود.", author: "descartes", cat: "فلسفة الوجود", fact: "ابتكر الكوجيتو لإثبات وجود الذات بعد الشك المطلق." },
+      { quote: "الشك هو بداية الحكمة.", author: "descartes", cat: "منطق وعقل", fact: "اخترع ديكارت نظام الإحداثيات الديكارتية المستخدم بالرياضيات." },
+      { quote: "كلمة مستحيل ليست في قاموسي، بل في معجم الحمقى.", author: "napoleon", cat: "عزيمة وإرادة", fact: "قاد فرنسا في معارك تاريخية خلدت اسمه كأحد أعظم القادة." },
+      { quote: "القائد هو تاجر الأمل.", author: "napoleon", cat: "قيادة وإلهام", fact: "وضع قانون نابليون المدني الذي بُنيت عليه قوانين العالم الحديث." },
+      { quote: "المشاعر المكبوتة لا تموت، بل تظهر لاحقاً بطرق أكثر قبحاً.", author: "freud", cat: "علم النفس", fact: "مؤسس مدرسة التحليل النفسي ومكتشف أسرار اللاوعي." },
+      { quote: "الأحلام هي الطريق الملكي إلى معرفة العقل الباطن.", author: "freud", cat: "عالم الأحلام", fact: "اعتبر كتابه 'تفسير الأحلام' أعظم إنجازاته الفكرية." },
+      { quote: "الخيال أكثر أهمية من المعرفة، فالمعرفة محدودة بينما الخيال يطوف العالم.", author: "einstein", cat: "إبداع وفيزياء", fact: "تخيل ركوب شعاع الضوء وهو مراهق فابتكر النظرية النسبية." },
+      { quote: "الجنون هو أن تفعل الشيء نفسه مراراً وتتوقع نتائج مختلفة.", author: "einstein", cat: "منطق وتغيير", fact: "حاز على جائزة نوبل لتفسيره التأثير الكهروضوئي." },
+      { quote: "لكل فعل رد فعل مساوٍ له في المقدار ومضاد له في الاتجاه.", author: "newton", cat: "فيزياء وحركة", fact: "القانون الثالث لنيوتن هو أساس انطلاق الصواريخ للفضاء." },
+      { quote: "ما نعرفه قطرة، وما نجهله محيط كامل.", author: "newton", cat: "تواضع علمي", fact: "ألهمته تفاحة سقطت في حديقته فكرة الجاذبية الأرضية." }
+    ];
+
+    let currentQuestions = [];
+    let qIndex = 0;
+    let score = 0;
+    let streak = 0;
+    let correctCount = 0;
+    let timer = 15;
+    let timerInterval = null;
+
+    function showScreen(name) {
+      document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+      document.getElementById('screen-' + name).classList.add('active');
+    }
+
+    function startGame() {
+      logGa4Event('game_start', { category: 'منوع' });
+      currentQuestions = [...QUOTES_POOL].sort(() => 0.5 - Math.random()).slice(0, 10);
+      qIndex = 0;
+      score = 0;
+      streak = 0;
+      correctCount = 0;
+      showScreen('quiz');
+      loadQuestion();
+    }
+
+    function loadQuestion() {
+      clearInterval(timerInterval);
+      timer = 15;
+      updateTimerUI();
+
+      const q = currentQuestions[qIndex];
+      document.getElementById('question-counter').innerText = `السؤال ${qIndex + 1} من 10`;
+      document.getElementById('score-counter').innerText = `${score} نقطة 🏆`;
+      document.getElementById('streak-text').innerText = streak > 1 ? `🔥 x${streak}` : '';
+      document.getElementById('quote-category').innerText = q.cat;
+      document.getElementById('quote-content').innerText = `« ${q.quote} »`;
+
+      // Build 4 options (correct + 3 random)
+      const allKeys = Object.keys(FIGURES);
+      const otherKeys = allKeys.filter(k => k !== q.author).sort(() => 0.5 - Math.random()).slice(0, 3);
+      const options = [q.author, ...otherKeys].sort(() => 0.5 - Math.random());
+
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+      options.forEach(optKey => {
+        const fig = FIGURES[optKey];
+        const card = document.createElement('div');
+        card.className = 'option-card';
+        card.innerHTML = `
+          <div style="font-size:28px;">${fig.icon}</div>
+          <div style="flex:1;">
+            <div style="font-weight:800; font-size:16px;">${fig.name}</div>
+          </div>
+        `;
+        card.onclick = () => selectAnswer(optKey, card);
+        container.appendChild(card);
+      });
+
+      timerInterval = setInterval(() => {
+        timer--;
+        updateTimerUI();
+        if (timer <= 0) {
+          clearInterval(timerInterval);
+          selectAnswer(null, null);
+        }
+      }, 1000);
+    }
+
+    function updateTimerUI() {
+      const fill = document.getElementById('timer-fill');
+      const text = document.getElementById('timer-text');
+      const pct = (timer / 15) * 100;
+      fill.style.width = pct + '%';
+      text.innerText = `الوقت: ${timer} ث`;
+      if (timer <= 5) {
+        fill.classList.add('urgent');
+      } else {
+        fill.classList.remove('urgent');
+      }
+    }
+
+    // Lightweight Web Audio API synthesizer for native sound effects
+    let audioCtx = null;
+    function playBeep(type) {
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        const now = audioCtx.currentTime;
+        if (type === 'correct') {
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(523.25, now);
+          osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.12);
+          gain.gain.setValueAtTime(0.2, now);
+          gain.gain.exponentialRampToValueAtTime(0.01, now + 0.22);
+          osc.start(now);
+          osc.stop(now + 0.22);
+        } else if (type === 'wrong') {
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(220, now);
+          osc.frequency.exponentialRampToValueAtTime(140, now + 0.2);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
+          osc.start(now);
+          osc.stop(now + 0.25);
+        }
+      } catch (e) {}
+    }
+
+    function selectAnswer(selectedKey, cardElement) {
+      clearInterval(timerInterval);
+      const q = currentQuestions[qIndex];
+      const isCorrect = selectedKey === q.author;
+      const isTimeout = selectedKey === null;
+
+      if (isCorrect) {
+        playBeep('correct');
+        streak++;
+        correctCount++;
+        score += 100 + (timer * 10) + (streak * 20);
+        if (cardElement) cardElement.classList.add('correct');
+      } else {
+        playBeep('wrong');
+        streak = 0;
+        if (cardElement) cardElement.classList.add('wrong');
+      }
+
+      const activeFig = FIGURES[isCorrect ? q.author : (selectedKey || q.author)];
+      const reaction = isCorrect
+        ? activeFig.correct[Math.floor(Math.random() * activeFig.correct.length)]
+        : activeFig.wrong[Math.floor(Math.random() * activeFig.wrong.length)];
+
+      // Show reaction modal
+      const modal = document.getElementById('reaction-dialog');
+      document.getElementById('modal-status-badge').innerText = isCorrect ? 'إجابة صحيحة! 🎉' : (isTimeout ? 'انتهى الوقت! ⏰' : 'إجابة خاطئة! ❌');
+      document.getElementById('modal-status-badge').style.color = isCorrect ? 'var(--game-correct)' : 'var(--game-wrong)';
+      document.getElementById('modal-avatar').innerText = activeFig.icon;
+      document.getElementById('modal-author-name').innerText = activeFig.name;
+      document.getElementById('modal-speech').innerText = `« ${reaction} »`;
+      document.getElementById('modal-fact').innerText = `💡 معلومة: ${q.fact}`;
+      document.getElementById('modal-next-btn').innerText = (qIndex === 9) ? 'عرض النتيجة النهائية 🏆' : 'السؤال التالي ⬅️';
+      modal.classList.add('active');
+    }
+
+    function nextQuestion() {
+      document.getElementById('reaction-dialog').classList.remove('active');
+      if (qIndex < 9) {
+        qIndex++;
+        loadQuestion();
+      } else {
+        finishGame();
+      }
+    }
+
+    function finishGame() {
+      logGa4Event('game_complete', { score: score, correct_count: correctCount });
+      showScreen('result');
+      document.getElementById('result-score').innerText = `${correctCount} / 10`;
+      document.getElementById('result-points').innerText = `${score} نقطة 🎯`;
+
+      let title = "🍎 نيوتن انصدم!";
+      if (correctCount === 10) title = "🏆 أسطورة الفلاسفة - نيزك الذكاء الخارق!";
+      else if (correctCount >= 8) title = "🌟 داهية تاريخية - عقلك يوزن بلد!";
+      else if (correctCount >= 6) title = "💡 مفكّر صاعد - معلوماتك من ذهب!";
+      else if (correctCount >= 4) title = "📚 طالب حكمة - بدك تركيز أكتر!";
+      document.getElementById('result-title').innerText = title;
+    }
+
+    function shareScore() {
+      logGa4Event('share_click', { score: score });
+      const text = `🏆 حققت ${correctCount}/10 في لعبة نيزك: من قال هذه الجملة؟! (${score} نقطة)\nهل تقدر تتحداني؟ العب الآن: ${window.location.href}\n#نيزك #NAYZAK`;
+      if (navigator.share) {
+        navigator.share({ title: 'لعبة نيزك NAYZAK', text: text });
+      } else {
+        navigator.clipboard.writeText(text);
+        alert('تم نسخ نتيجتك! يمكنك لصقها ومشاركتها في الستوري أو الواتساب.');
+      }
+    }
+  </script>
+</body>
+</html>
